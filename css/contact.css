@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  /*Colours*/
+  --Black: #1b1d1e;
+  --honey: #eabf7f;
+  --Sage: #8c9e93;
+  --Gray: #73726d;
+  --White: #f2f2f2;
+  --Dune: #a68e74;
+
+  /*Font Size*/
+  --header1: 32px;
+  --header2: 24px;
+  --header3: 16px;
+  --header4: 12px;
+
+  /*Font Weight*/
+
+  --text-medium: 18px;
+  --text-regular: 16px;
+  --text-light: 13px;
+
+  --Font-weight-bold: 700;
+  --Font-weight-semi-bold: 600;
+  --Font-weight-medium: 500;
+  --Font-weight-regular: 400;
+  --Font-weight-light: 300;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: var(--medium);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: hidden;
+  scroll-behavior: smooth;
+}
+
+/*Navigation*/
+
+ul.navbar-nav {
+  padding: 0 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-logo {
+  flex-direction: start;
+}
+
+.logo-container {
+  flex-direction: start;
+}
+
+Nav {
+  font-size: var(--header1);
+  font-weight: var(--bold);
+  background-color: var(--Sage);
+}
+
+a.nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #f2f2f2;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar navbar-expand-xl navbar-light bg-sage {
+  width: 100%;
+}
+
+.navbar-nav .nav-item a.nav-link.active {
+  font-weight: var(--Font-weight-bold);
+  position: relative;
+}
+
+.navbar-nav .nav-item a.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-span {
+  font-family: "Manrope";
+  color: #f2f2f2;
+  place-content: start;
+}
+
+.navbar-brand-img {
+  padding-right: 10px;
+}
+
+.navbar-brand-span {
+  font-size: var(--text-medium);
+  font-weight: var(--Font-weight-medium);
+  color: #f2f2f2;
+  font-family: "Manrope";
+}
+
+a.nav-link {
+  margin-right: 30px;
+  font-size: var(--text-medium);
+  font-weight: var(--Font-weight-semi-bold);
+  color: #f2f2f2 !important;
+  font-family: "Manrope";
+}
+
+/*End Navigation*/
+
+h1 {
+  font-family: "Manrope";
+}
+
+.img-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-heading {
+  font-family: "Manrope";
+  font-size: 40px;
+}
+
+i {
+  color: #f2f2f2;
+  margin-top: 3px;
+  padding: 10 10 0 0;
+}
+
+i:hover {
+  scale: 1.2;
+  transition: 200ms;
+  color: #1b1d1e;
+}
+
+.footer-icons i {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+footer {
+  color: #f2f2f2 !important;
+}
+
+.hero {
+  font-family: "Open Sans";
+  font-weight: var(--medium);
+
+  margin-top: 5rem;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: var(--text-medium);
+  font-weight: var(--Font-weight-medium);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--Dune);
+}
+
+.btn-primary:focus {
+  background-color: var(--honey);
+}
+
+.btn-primary:hover {
+  background-color: var(--honey);
+  transition: 500ms;
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer {
+  font-family: "Manrope";
+  background-color: var(--Sage);
+
+  padding-top: 3px;
+}
+
+h5 {
+  font-family: "Manrope";
+}
+
+.table {
+  display: grid;
+  place-items: center;
+  font-size: medium;
+}
+
+table {
+  font-size: 24px !important;
+}
+
+#bttop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #eabf7f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Open Sans";
+  opacity: 50%;
+}
+
+#bttop:hover {
+  opacity: 100%;
+  transition: 300ms;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons i {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.form-label {
+  color: #f2f2f2 !important;
+}
+
+/* end of premade styles */
+
+.contact-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.contact-container h1 {
+  font-family: "Manrope";
+  padding-bottom: 20px;
+  color: #1b1d1e;
+}
+
+.contact-container p,
+input,
+textarea,
+label {
+  color: #1b1d1e;
+  font-family: "Open Sans";
+}
+
+.contact-container form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.contact-container input,
+textarea,
+label {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  color: #1b1d1e;
+}
+
+.contact-container input[type="submit"] {
+  background-color: #8c9e93;
+  padding: 15px 0;
+  color: #f2f2f2;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none !important;
+  border-radius: 25px;
+  font-family: "Manrope";
+}
+
+.contact-container input:focus,
+textarea:focus {
+  outline: 1px solid #1b1d1e;
+}
+
+a {
+  color: #1b1d1e;
+}
+
+a:hover {
+  color: #f2f2f2;
+}
+
+table td {
+  color: #f2f2f2 !important;
+}

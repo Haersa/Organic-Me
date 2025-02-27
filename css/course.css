@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Manrope:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  /*Colours*/
+  --Black: #1b1d1e;
+  --honey: #eabf7f;
+  --Sage: #8c9e93;
+  --Gray: #73726d;
+  --White: #f2f2f2;
+  --Dune: #a68e74;
+
+  /*Font Size*/
+  --header1: 32px;
+  --header2: 24px;
+  --header3: 16px;
+  --header4: 12px;
+
+  /*Font Weight*/
+
+  --text-medium: 18px;
+  --text-regular: 16px;
+  --text-light: 13px;
+
+  --Font-weight-bold: 700;
+  --Font-weight-semi-bold: 600;
+  --Font-weight-medium: 500;
+  --Font-weight-regular: 400;
+  --Font-weight-light: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: var(--medium);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overscroll-behavior: hidden;
+}
+
+/*Navigation*/
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    justify-content: flex-end !important;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #8c9e93;
+}
+
+.navbar-logo img {
+  padding-left: 2rem;
+}
+
+.go-back-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-family: "Manrope";
+  position: relative;
+  font-size: xx-large;
+}
+
+.go-back-link:hover {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.go-back-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f2f2f2;
+  animation: borderAnimation 2s infinite;
+}
+
+@keyframes borderAnimation {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.nav-span {
+  font-family: "Manrope";
+  color: #f2f2f2;
+  place-content: start;
+}
+
+.navbar-brand-img {
+  padding-right: 10px;
+}
+
+/*End Navigation*/
+
+h1 {
+  font-family: "Manrope";
+}
+
+.img-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-heading {
+  font-family: "Manrope";
+  font-size: 40px;
+}
+
+i {
+  color: #f2f2f2;
+  margin-top: 3px;
+  padding: 10 10 0 0;
+}
+
+i:hover {
+  scale: 1.2;
+  transition: 200ms;
+  color: #1b1d1e;
+}
+
+.footer-icons i {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: var(--text-medium);
+  font-weight: var(--Font-weight-medium);
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--Dune);
+}
+
+.btn-primary:focus {
+  background-color: var(--honey);
+}
+
+.btn-primary:hover {
+  background-color: var(--honey);
+  transition: 500ms;
+}
+
+footer {
+  font-family: "Manrope";
+  background-color: var(--Sage);
+
+  padding-top: 3px;
+}
+
+#bttop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #1b1d1e;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Open Sans";
+}
+
+#bttop:hover {
+  background-color: #73726d;
+  transition: 300ms;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons i {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.accordion-button {
+  font-family: "Manrope";
+  background-color: #8c9e93 !important;
+  color: #f2f2f2 !important;
+}
+
+.accordion-button::after {
+  color: #f2f2f2 !important;
+}
+
+.accordion {
+  text-decoration: none;
+}
+
+h1 {
+  color: #1b1d1e;
+  font-family: "Manrope";
+}
+
+.footer-list li {
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: "Open Sans";
+  color: #1b1d1e;
+  font-size: medium;
+}
+
+.video-container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h5 {
+  font-family: "Manrope";
+}
+
+#bttop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #eabf7f !important;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Open Sans";
+  opacity: 50%;
+}
+
+#bttop:hover {
+  opacity: 100%;
+  transition: 300ms;
+}

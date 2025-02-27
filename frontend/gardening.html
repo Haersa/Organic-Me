@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Organic Me's gardening page and growing guides/courses."
+    />
+    <meta
+      name="keywords"
+      content="Organic, Me, Organic Me, borders, scottish borders, kelso, organic, gardening, course,"
+    />
+    <meta name="author" content="Harris Hamilton" />
+    <title>Organic Me - Gardening</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color: #f2f2f2">
+    <nav class="navbar navbar-expand-xxl navbar-light bg-sage">
+      <div class="container">
+        <!-- Toggler/collapsible Button -->
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fa-lg" style="color: #f2f2f2"></i>
+        </button>
+
+        <!-- Logo/Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="Index.html">
+          <img
+            src="Images/OrganicMe-hero.svg"
+            height="100px"
+            width="100px"
+            alt="logo"
+          />
+          <span class="nav-span">Organic Me</span>
+        </a>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse ml-auto-sm" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="honey.html">Honey</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gardening.html">Gardening</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="video-gardeningcontainer">
+      <video autoplay muted id="#vid">
+        <source src="Images/gardeninghero.mp4" type="video/mp4" poster =
+        Images/img/gardeninghero.jpg> Your browser does not support the video
+        tag.
+      </video>
+
+      <a href="#gardening" class="gardeningbutton">Learn More</a>
+      <a href="contact.html" button class="gardeningbuttontwo">Contact Us</a>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-3 mb-3 mt-3">
+          <i class="fa-regular fa-clock fa-2xl" style="color: #8c9e93"></i>
+          <div class="other-heading">
+            Dates
+            <p class="other-para">Our Courses run all year long</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 mb-3 mt-3">
+          <i class="fa-regular fa-hourglass fa-2xl" style="color: #8c9e93"></i>
+          <div class="other-heading">
+            Duration
+            <p class="other-para">Our courses last a total of 9 weeks</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 mb-3 mt-3">
+          <i class="fa-solid fa-check fa-2xl" style="color: #8c9e93"></i>
+          <div class="other-heading">
+            Entry Requirements
+            <p class="other-para">No entry requirements</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 mb-3 mt-3">
+          <i
+            class="fa-solid fa-sterling-sign fa-2xl"
+            style="color: #8c9e93"
+          ></i>
+          <div class="other-heading">
+            Cost
+            <p class="other-para">Our courses are free</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!--accordion container-->
+      <div class="row justify-content-center mt-5 mb-5">
+        <div class="col-md-8">
+          <div class="accordion rounded" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Gardening Tips
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque laoreet neque nulla, vitae lacinia leo volutpat
+                  consectetur. Vestibulum condimentum tincidunt risus ultricies
+                  molestie. Proin non finibus massa. Quisque quis dui maximus,
+                  congue urna quis, tristique enim. Nulla aliquam quam id risus
+                  imperdiet cursus. Sed consectetur lectus neque, sed aliquam
+                  libero pharetra non. Nulla venenatis, tortor vel vehicula
+                  volutpat, odio nulla malesuada ipsum, maximus blandit metus
+                  mauris sed nisl. Fusce tincidunt dapibus nulla vel accumsan.
+                  Vestibulum auctor nisl mollis vestibulum dapibus. Nullam
+                  iaculis ullamcorper bibendum. Phasellus tincidunt justo et
+                  cursus fermentum. Praesent congue in felis sit amet malesuada.
+                  Donec blandit id ma
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Plant Care
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque laoreet neque nulla, vitae lacinia leo volutpat
+                  consectetur. Vestibulum condimentum tincidunt risus ultricies
+                  molestie. Proin non finibus massa. Quisque quis dui maximus,
+                  congue urna quis, tristique enim. Nulla aliquam quam id risus
+                  imperdiet cursus. Sed consectetur lectus neque, sed aliquam
+                  libero pharetra non. Nulla venenatis, tortor vel vehicula
+                  volutpat, odio nulla malesuada ipsum, maximus blandit metus
+                  mauris sed nisl. Fusce tincidunt dapibus nulla vel accumsan.
+                  Vestibulum auctor nisl mollis vestibulum dapibus. Nullam
+                  iaculis ullamcorper bibendum. Phasellus tincidunt justo et
+                  cursus fermentum. Praesent congue in felis sit amet malesuada.
+                  Donec blandit id ma
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Pest Control
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque laoreet neque nulla, vitae lacinia leo volutpat
+                  consectetur. Vestibulum condimentum tincidunt risus ultricies
+                  molestie. Proin non finibus massa. Quisque quis dui maximus,
+                  congue urna quis, tristique enim. Nulla aliquam quam id risus
+                  imperdiet cursus. Sed consectetur lectus neque, sed aliquam
+                  libero pharetra non. Nulla venenatis, tortor vel vehicula
+                  volutpat, odio nulla malesuada ipsum, maximus blandit metus
+                  mauris sed nisl. Fusce tincidunt dapibus nulla vel accumsan.
+                  Vestibulum auctor nisl mollis vestibulum dapibus. Nullam
+                  iaculis ullamcorper bibendum. Phasellus tincidunt justo et
+                  cursus fermentum. Praesent congue in felis sit amet malesuada.
+                  Donec blandit id ma
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed text-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Soil Management
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Quisque laoreet neque nulla, vitae lacinia leo volutpat
+                  consectetur. Vestibulum condimentum tincidunt risus ultricies
+                  molestie. Proin non finibus massa. Quisque quis dui maximus,
+                  congue urna quis, tristique enim. Nulla aliquam quam id risus
+                  imperdiet cursus. Sed consectetur lectus neque, sed aliquam
+                  libero pharetra non. Nulla venenatis, tortor vel vehicula
+                  volutpat, odio nulla malesuada ipsum, maximus blandit metus
+                  mauris sed nisl. Fusce tincidunt dapibus nulla vel accumsan.
+                  Vestibulum auctor nisl mollis vestibulum dapibus. Nullam
+                  iaculis ullamcorper bibendum. Phasellus tincidunt justo et
+                  cursus fermentum. Praesent congue in felis sit amet malesuada.
+                  Donec blandit id ma
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of accordion container-->
+
+    <div class="heading-container-customize text-center">
+      <h3 class="heading-customize" id="gardening">Gardening Courses</h3>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-lg-4 g-4 mb-4">
+        <!-- First clickable card -->
+        <div class="col">
+          <a href="lettuce.html" class="course-card">
+            <div class="card h-100 rounded">
+              <img
+                src="Images/letuce.jpg"
+                class="card-top rounded-top"
+                alt="Image 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lettuce Farming Course</h5>
+                <p class="shhh">Click to Learn More!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Second clickable card -->
+        <div class="col">
+          <a href="tomato.html" class="course-card">
+            <div class="card h-100 rounded">
+              <img
+                src="Images/tomatos.jpg"
+                class="card-top rounded-top"
+                alt="Image 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tomato Gardening Course</h5>
+                <p class="shhh">Click to Learn More!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Third clickable card -->
+        <div class="col">
+          <a href="potato.html" class="course-card">
+            <div class="card h-100 rounded">
+              <img
+                src="Images/potatos.jpg"
+                class="card-top rounded-top"
+                alt="Image 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Potato Farming Course</h5>
+                <p class="shhh">Click to Learn More!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Fourth clickable card -->
+        <div class="col">
+          <a href="carrots.html" class="course-card">
+            <div class="card h-100 rounded">
+              <img
+                src="Images/carrots.jpg"
+                class="card-top rounded-top"
+                alt="Image 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Carrot Farming Course</h5>
+                <p class="shhh">Click to Learn More!</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="testimonial-slider-wrapper">
+            <div
+              id="testimonialSlider"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-item">
+                    <img
+                      src="Images/review1.jpg"
+                      class="reviewer-img"
+                      alt="Reviewer 1 of gardening courses"
+                    />
+                    <p class="testimonial-comment">
+                      "Great service! My garden has never looked better!"
+                    </p>
+                    <div class="rating">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <img
+                      src="Images/review2.jpg"
+                      class="reviewer-img"
+                      alt="Reviewer 2 of gardening courses"
+                    />
+                    <p class="testimonial-comment">
+                      "I learned a lot from the gardening courses. Highly
+                      recommended!"
+                    </p>
+                    <div class="rating">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <img
+                      src="Images/review3.jpg"
+                      class="reviewer-img"
+                      alt="Reviewer 3 of gardening courses"
+                    />
+                    <p class="testimonial-comment">
+                      "Highly impressed! The gardening classes were enriching
+                      and practical."
+                    </p>
+                    <div class="rating">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <img
+                      src="Images/review4.jpg"
+                      class="reviewer-img"
+                      alt="Reviewer 4 of gardening courses"
+                    />
+                    <p class="testimonial-comment">
+                      "Incredible gardening courses! A wealth of knowledge and
+                      highly recommended!"
+                    </p>
+                    <div class="rating">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialSlider"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialSlider"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <!-- Grid container -->
+      <div class="container p-4 footer-icons">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <p>Connect with us on Social Media</p>
+          <!-- Facebook -->
+          <a href=" https://en-gb.facebook.com/" target=" _blank">
+            <i class="fa-brands fa-facebook-f fa-2xl"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a href=" https://twitter.com/" target=" _blank">
+            <i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            href=" https://www.google.com/?safe=active&ssui=on "
+            target=" _blank"
+          >
+            <i class="fa-brands fa-google fa-2xl"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a href=" https://www.instagram.com/ " target="_blank">
+            <i class="fa-brands fa-instagram fa-2xl"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a href=" https://gb.linkedin.com/ " target=" _blank">
+            <i class="fa-brands fa-linkedin-in fa-2xl"></i
+          ></a>
+        </section>
+      </div>
+
+      <!-- Section: Form -->
+      <div class="container">
+        <section>
+          <form action="newsletter_signup.php" method="POST">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    name="email"
+                    id="form5Example2"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="form5Example2"
+                    >Email address</label
+                  >
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="btn btn-primary shadow-none"
+                  name="submit"
+                >
+                  Sign Me Up!
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+      </div>
+
+      <!--opening hours-->
+
+      <div class="footer-container">
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Site Map:</h6>
+            <p>
+              <a href="Index.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="products.html" class="text-reset">Products</a>
+            </p>
+            <p>
+              <a href="honey.html" class="text-reset">Honey</a>
+            </p>
+            <p>
+              <a href="gardening.html" class="text-reset">Gardening</a>
+            </p>
+            <p>
+              <a href="about.html" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-reset">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <div class="col-md-4">
+            <h5 class="mb-1 text-white">Opening Hours:</h5>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Mon - Fri:</td>
+                  <td>8am - 9pm:</td>
+                </tr>
+                <tr>
+                  <td>Sat - Sun:</td>
+                  <td>8am - 2pm:</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-4">
+            <h5 class="mb-1 text-white">Contact Info:</h5>
+            <ul class="footer-list">
+              <li>
+                <i
+                  class="fa-solid fa-phone fa-shake"
+                  style="--fa-animation-duration: 3s; --fa-animation-delay: 5s"
+                ></i
+                >+ 44 1234 5678
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-location-dot fa-bounce fa-2xl"
+                  style="--fa-animation-duration: 3s; --fa-animation-delay: 5s"
+                ></i
+                >24 Milton Road East, Edinburgh EH15 2PP
+              </li>
+              <li>
+                <i
+                  class="fa-regular fa-envelope fa-bounce fa-2xl"
+                  style="--fa-animation-duration: 3s; --fa-animation-delay: 5s"
+                ></i
+                >contactus@organicme.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end of footer row-->
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3">© 2023 Copyright: Harris Hamilton</div>
+      <div class="text-end">
+        <button onclick="topFunction()" id="bttop" title="Go to top">↑</button>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
