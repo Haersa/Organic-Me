@@ -1,6 +1,6 @@
 # Organic Me
 
-![Project Preview](Projectpreview.PNG)
+![Project Preview](Projectoverview.PNG)
 
 A responsive website for a hypothetical organic café built with HTML, CSS, JavaScript, and Bootstrap.
 
