@@ -38,7 +38,7 @@ I look back on this project with a sense of beginning, and I use it as a benchma
 - Responsive contact form
 ## Live Demo
 
-You can view the live project [here](http://webdev.edinburghcollege.ac.uk/~HNCWEBMR11/Organic%20Me/Index.html) or check out the code in the repository.
+You can view the live project [here](http://webdev.edinburghcollege.ac.uk/HNCWEBMR11/Organic%20Me/Index.html) or check out the code in the repository.
 
 
 
